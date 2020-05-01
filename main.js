@@ -10,7 +10,7 @@ for (let i = 1; i <= 5; i++) {
   imgEl.src = `./images/pic${i}.jpg`
 
   imgEl.addEventListener('click', function () {
-    console.log(this)
+    img.src = this.src
   })
 
   thumbnailBar.appendChild(imgEl)
