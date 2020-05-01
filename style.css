@@ -33,6 +33,10 @@ img {
 }
 
 .full-img {
+  /* TODO: Consider making this full responsive so it handles images of varying widths. */
+  margin: 0 auto;
+  max-width: 640px;
+
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/position */
   position: relative;
 }
