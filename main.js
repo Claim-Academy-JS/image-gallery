@@ -9,6 +9,10 @@ for (let i = 1; i <= 5; i++) {
   const imgEl = document.createElement('img')
   imgEl.src = `./images/pic${i}.jpg`
 
+  imgEl.addEventListener('click', function () {
+    console.log(this)
+  })
+
   thumbnailBar.appendChild(imgEl)
 }
 
