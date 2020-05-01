@@ -45,6 +45,9 @@ img {
   left: 0;
   position: absolute;
   top: 0;
+
+  /* https://dev.to/sarah_chima/using-css-transitions-on-the-height-property-al0 */
+  transition: height 0.4s linear;
   width: 100%;
 }
 
