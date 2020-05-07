@@ -21,8 +21,8 @@ for (let i = 1; i <= 5; i++) {
 
 /* Darken/Lighten button */
 btn.addEventListener('click', () => {
-  // EXPLICITLY CONVERT to a NUMBER for more reliable results
-  if (Number(overlayStyle.getPropertyValue('--height')) === 0) {
+  // 'height' uses 'px' units in browser!
+  if (overlayStyle.getPropertyValue('--height')) === "0px") {
     overlay.style.setProperty('--height', displayedImgStyle.getPropertyValue('height'))
   } else {
     overlay.style.setProperty('--height', '0')
