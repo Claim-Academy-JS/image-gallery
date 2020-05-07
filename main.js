@@ -1,4 +1,4 @@
-const btn = document.querySelector('.dark')
+const btn = document.querySelector(button)
 const displayedImg = document.querySelector('.displayed-img')
 const displayedImgStyle = window.getComputedStyle(displayedImg)
 const overlay = document.querySelector('.overlay')
