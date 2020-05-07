@@ -1,0 +1,76 @@
+body {
+  /* 'Basic centering' when dealing with just 1 thing  */
+  margin: 0 auto;
+  max-width: 960px;
+
+  /* Allow app to be full width of screen (until max width). */
+  width: 100vw;
+}
+
+h1 {
+  /* Update to use Google Font */
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  text-align: center;
+}
+
+button {
+  background: var(--color-button);
+  border: 0;
+  border: 1px solid #999;
+  cursor: pointer;
+  left: 2px;
+  position: absolute;
+  text-shadow: 1px 1px 1px white;
+  top: 2px;
+}
+
+img {
+  height: auto;
+
+  /* Responsive image - not allowed to be more than the width of its parent, but can be smaller. */
+  max-width: 100%;
+}
+
+.full-img {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/position */
+  position: relative;
+}
+
+.overlay {
+  --height: 0;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  height: var(--height);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.thumb-bar {
+  width: 100%;
+}
+
+.thumb-bar img {
+  cursor: pointer;
+
+  /* 5 images divided evenly */
+  width: 20%;
+}
+
+/* Utility Classes */
+.flex {
+  display: flex;
+}
+
+.flex-align-items-center {
+  align-items: center;
+}
+
+.flex-flex-direction--column {
+  flex-direction: column;
+}
+
+.flex-justify-content--center {
+  justify-content: center;
+}
